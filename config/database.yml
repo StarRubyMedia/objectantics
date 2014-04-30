@@ -16,11 +16,12 @@
 #
 development:
   adapter: postgresql
+  host: <%=ENV['IP']%>
   encoding: unicode
   database: objectantics_development
   pool: 5
-  username: objectantics
-  password:
+  username: <%=ENV['C9_USER']%>
+  #password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -48,7 +49,7 @@ test:
   encoding: unicode
   database: objectantics_test
   pool: 5
-  username: objectantics
+  #username: objectantics
   password:
 
 production:
@@ -56,5 +57,5 @@ production:
   encoding: unicode
   database: objectantics_production
   pool: 5
-  username: objectantics
+  #username: objectantics
   password:
