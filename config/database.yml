@@ -16,11 +16,12 @@
 #
 development:
   adapter: postgresql
-  host: <%=ENV['IP']%>
+  #host: <%=ENV['IP']%>
   encoding: unicode
   database: objectantics_development
   pool: 5
-  username: <%=ENV['C9_USER']%>
+  #username: 
+  #username: <%=ENV['C9_USER']%>
   #password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
